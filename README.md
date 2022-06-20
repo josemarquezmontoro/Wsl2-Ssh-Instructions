@@ -1,5 +1,5 @@
 # WSL2-SSH-INSTRUCTIONS
-Guide on how to install wsl2 and configure it for ssh and rsync.
+Guide on how to install wsl2 and configure it for ssh.
 
 ## Requirements
 - Have Windows 10 version 1903 or higher, with Build 18362 or higher, for x64 systems, and Version 2004 or higher, with Build 19041 or higher, for ARM64 systems
