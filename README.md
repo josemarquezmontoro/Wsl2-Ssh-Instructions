@@ -31,6 +31,10 @@ netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 conne
    - listenport, connectport: this will be the port used to be listened or connected by external devices, make sure that the port is not used by other service
    - connectaddress: ip of your choice , which is an internal address to your machine. 
 ```
+- Write the bellow command to open an incoming Firewall Port, use the same port as used before
+```
+netsh advfirewall firewall add rule name=”Open Port 2222 for WSL2” dir=in action=allow protocol=TCP localport=2222
+```
 
 ## WSL2 SSH configuration
 - Open the WSL2 machine created previusly
@@ -48,3 +52,8 @@ PasswordAuthentication yes
 ```
 - Start ssh service `sudo service ssh start` if say  a no hostkeys available error try `sudo ssh-keygen -A`
 - Try connecting to a external  device using ssh '
+- IMPORTANT BE CAREFUL ABOUT IF THE CONNECTION FAIL
+   - Checks that both devices are listening to each other, use ping commando for this
+   - Checks netshs interface and WSL2 machine have the same ip in both computers
+   - Check ssh service is enable
+
