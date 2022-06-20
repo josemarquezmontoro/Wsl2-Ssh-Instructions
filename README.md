@@ -57,3 +57,7 @@ PasswordAuthentication yes
    - Checks netshs interface and WSL2 machine have the same ip in both computers
    - Check ssh service is enable
 
+## Credits
+- David Bombal for his explanatory video about the WL2 networking  https://www.youtube.com/watch?v=yCK3easuYm4
+- Scott Hanselman for his explanatory post about the SHH - https://www.hanselman.com/blog/how-to-ssh-into-wsl2-on-windows-10-from-an-external-machine
+
